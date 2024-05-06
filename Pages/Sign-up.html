@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <link rel="apple-touch-icon" sizes="76x76" href="#" />
+    <link rel="icon" type="image/png" href="#" />
+    <title>Sign Up</title>
+    <!--     Fonts and icons     -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Nucleo Icons -->
+    <link href="/Assets/css/nucleo-icons.css" rel="stylesheet" />
+    <link href="/Assets/css/nucleo-svg.css" rel="stylesheet" />
+    <!-- Font Awesome Icons -->
+    <script
+      src="https://kit.fontawesome.com/616c816015.js"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Material Icons -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons+Round"
+      rel="stylesheet"
+    />
+    <!-- CSS Files -->
+    <link
+      id="pagestyle"
+      href="/Assets/css/material-dashboard.css?v=3.1.0"
+      rel="stylesheet"
+    />
+  </head>
+
+  <!-- End of Head -->
+  <!-- Body -->
+
+  <body class="">
+    <main class="main-content mt-0">
+      <section>
+        <div class="page-header min-vh-100">
+          <div class="container">
+            <div class="row">
+              <div
+                class="col-6 d-lg-flex d-none h-100 my-auto pe-0 position-absolute top-0 start-0 text-center justify-content-center flex-column"
+              >
+                <div
+                  class="position-relative bg-gradient-primary h-100 w-100 mx-n3 ms-0 my-0 mt-0 px-0 border-radius-sm d-flex flex-column justify-content-center"
+                  style="background-image: url('/Assets/img/images.jpeg')"
+                ></div>
+              </div>
+              <div
+                class="col-xl-4 col-lg-5 col-md-7 d-flex flex-column ms-auto me-auto ms-lg-auto me-lg-5"
+              >
+                <div class="card card-plain">
+                  <div class="card-header">
+                    <h4 class="font-weight-bolder">Sign Up</h4>
+                    <p class="mb-0">
+                      Enter your email and password to register
+                    </p>
+                  </div>
+                  <div class="card-body">
+                    <form role="form" id="sign-up">
+                      <div class="mb-3">
+                        <label class="form-label">Name</label>
+                        <input
+                          type="text"
+                          class="form-control border border-dark-subtle p-2"
+                          id="name"
+                          placeholder="Name"
+                          required
+                        />
+                        <span id="name_error" class="text-danger"></span>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Email</label>
+                        <input
+                          type="email"
+                          class="form-control border border-dark-subtle p-2"
+                          id="email"
+                          placeholder="Email"
+                          required
+                        />
+                        <span id="email_error" class="text-danger"></span>
+                      </div>
+                      <div class="mb-3">
+                        <label class="form-label">Password</label>
+                        <input
+                          type="password"
+                          class="form-control border border-dark-subtle p-2"
+                          id="password"
+                          placeholder="Password"
+                          required
+                        />
+                        <span id="password_error" class="text-danger"></span>
+                      </div>
+                      <div class="form-check form-check-info text-start ps-0">
+                        <input
+                          class="form-check-input bg-dark-blue border border-dark"
+                          type="checkbox"
+                          value=""
+                          id="flexCheckDefault"
+                          checked
+                        />
+                        <label class="form-check-label" for="flexCheckDefault">
+                          I agree the
+                          <a href="/" class="text-dark font-weight-bolder"
+                            >Terms and Conditions</a
+                          >
+                        </label>
+                      </div>
+                      <div class="text-center">
+                        <button
+                          type="submit"
+                          class="btn btn-lg bg-dark-blue text-white btn-lg w-100 mt-4 mb-0"
+                          id="sign-up"
+                        >
+                          Sign Up
+                        </button>
+                      </div>
+                    </form>
+                  </div>
+                  <div class="card-footer text-center pt-0 px-lg-2 px-1">
+                    <p class="mb-2 text-sm mx-auto">
+                      Already have an account?
+                      <a
+                        href="/Pages/Sign-in.html"
+                        class="text-dark-blue text-dark font-weight-bold"
+                        >Sign in</a
+                      >
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!--   Core JS Files   -->
+    <script src="../Assets/js/core/popper.min.js"></script>
+    <script src="../Assets/js/core/bootstrap.min.js"></script>
+    <script src="../Assets/js/plugins/perfect-scrollbar.min.js"></script>
+    <script src="../Assets/js/plugins/smooth-scrollbar.min.js"></script>
+    <script src="../Assets/js/scripts.js"></script>
+    <script>
+      var win = navigator.platform.indexOf("Win") > -1;
+      if (win && document.querySelector("#sidenav-scrollbar")) {
+        var options = {
+          damping: "0.5",
+        };
+        Scrollbar.init(document.querySelector("#sidenav-scrollbar"), options);
+      }
+    </script>
+    <!-- Control Center for Material Dashboard: parallax effects, scripts for the example pages etc -->
+    <script src="../assets/js/material-dashboard.min.js?v=3.1.0"></script>
+  </body>
+</html>
